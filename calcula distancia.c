@@ -2,7 +2,7 @@
 #include <math.h>
 
 //função que calcula a distancia
-float calculaDistrancia (int x1,inty1,int x2,int y2){
+float calculaDistancia (int x1,inty1,int x2,int y2){
 return sqrt (pow (x2-x1,2)+pow(y2-y1,2));
 }
 //main
@@ -16,5 +16,11 @@ int main(){
 	scanf("%i i%",&x1,y1);
 	printf("Informe as coordenadas do ponto B: ");
 	scanf("%i i%",&x2,y2);
+	
+	//calculo da distancia entre os pontos
+	distancia = calculaDistancia(x1,y1,x2,y2);
+	
+	//mostra o resultado
+	printf("Distancia: %f",distancia);
 	
 }
